@@ -1,0 +1,37 @@
+html {
+  font-family: "Roboto";
+}
+
+/*top yellow bar with headers*/
+
+header {
+  height: 100px;
+  background-color: #ffb327;
+}
+
+h1, h2 {
+  margin: 0;
+}
+
+h2 {
+  font-size: 1.15rem;
+}
+
+/*formats for each card*/
+
+img {
+  width: 100%;
+}
+
+.card {
+  border: 1px solid lightgray;
+  width: 100%;
+  padding: 0 10px;
+  margin-top: -5px;;
+  height: 
+}
+
+p:first-child {
+  font-size: 1.15rem;
+  font-weight: 700;
+}

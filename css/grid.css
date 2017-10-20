@@ -1,0 +1,49 @@
+/*Set the box-sizing to border box so padding is internal*/
+
+* {
+  box-sizing: border-box;
+}
+
+/*Define a fluid row with a max width of 1000px*/
+
+.row {
+  max-width: 1000px;
+  padding: 20px;
+  margin: 0 auto;
+}
+
+/* Clearfix */
+.row::before,
+.row::after {
+  display: table;
+  content: '';
+}
+
+.row::after {
+  clear: both;
+}
+
+/*column format on small screens*/
+
+.col3, .col4, .col6, .col12 {
+  width: 100%;
+  padding: 1.04166666%;
+  float: left;
+}
+
+/*change column format to side by side for large screens*. Percentage is the # of columns in the width divided by 12 for a 12 column grid  */
+
+@media only screen and (min-width: 640px) {
+  .col3 {
+    width: 25%;
+  }
+  .col4 {
+    width: 33.333333%;
+  }
+  .col6 {
+    width: 50%;
+  }
+  .col12 {
+    width: 100%;
+  }
+}
